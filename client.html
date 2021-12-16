@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/7ef4a8dcd8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Online Sos</title>-+
+</head>
+
+<body>
+    <div class="topDiv">
+        <!-- <div class="headerDiv"> -->
+        <h1>Online SOS</h1>
+        <!-- </div> -->
+
+        <div class="container" id="container">
+
+            <div class="sidebar" id="sidebar">
+                <div class="flex-col1">
+                    <!-- user details goes here -->
+                </div>
+                
+                <button class="menu-btn" >Menü <i class="fas fa-bars menu-ikon fa-lg"></i></button>
+                <div class="flex-col2 " id="btnss">
+                    <button class="connectBtn" id="connectBtn">Bağlan</button>
+                    <button class="newGame" id="newGame">Yeni Oyun</button>
+                    <label for="joinGame" class="joinLabel">Mevcut Oyunlar</label>
+                    <ul class="currGames" id="currGames">
+                        <li>Oyun yok </li>
+                    </ul>
+                    <button type="submit">Katıl</button>
+
+                </div>
+            </div>
+            <div class="mainbar" id="mainbar">
+                <div class="gameStatus" id="gameStatus"></div>
+                <div class="board" id="board">
+                    <div class="cell" id="cell"></div>
+                    <div class="cell" id="cell"></div>
+                    <div class="cell" id="cell"></div>
+                    <div class="cell" id="cell"></div>
+                    <div class="cell" id="cell"></div>
+                    <div class="cell" id="cell"></div>
+                    <div class="cell" id="cell"></div>
+                    <div class="cell" id="cell"></div>
+                    <div class="cell" id="cell"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="clientScript.js" defer></script>
+    <script>
+		$(document).ready(function(){
+            $(".menu-btn").click(function()
+            {
+                $("#btnss").toggle("slow");
+            })
+        })
+	</script>
+    
+</body>
+</html>

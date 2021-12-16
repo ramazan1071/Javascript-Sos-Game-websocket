@@ -1,0 +1,16 @@
+{
+  "name": "interactivegame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.1-security",
+    "websocket": "^1.0.34",
+    "ws": "^7.2.5"
+  }
+}
